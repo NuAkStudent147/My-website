@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayan Asif — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════════════ -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">Ayan Asif</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ai-video">AI Video</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#academic">Academic</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- CV Download — always visible in nav -->
+      <a href="AyanAsif_CV_Final.docx" download class="btn btn-cv" title="Download CV">
+        ⬇ Download CV
+      </a>
+    </nav>
+  </header>
+
+
+  <!-- ══════════════════════════════════════════════
+       HERO
+       ══════════════════════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">👋 Welcome to my portfolio</p>
+      <h1>Hi, I'm <span class="accent">Ayan Asif</span></h1>
+      <p class="hero-sub">Marketing Student &nbsp;|&nbsp; Aspiring Marketing Intern</p>
+      <p class="hero-desc">I craft campaigns and research that connect brands with people on a human level.</p>
+      <div class="hero-btns">
+        <a href="#ai-video" class="btn btn-primary">View My Work</a>
+        <a href="AyanAsif_CV_Final.docx" download class="btn btn-outline">⬇ Download CV</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       AI VIDEO — Magnum Campaign
+       File: place your MP4 named exactly as below
+       in the same folder as index.html before deploying.
+
+       YOUR FILE:
+       1776622603843_Multi-Shot_Video_-_...mp4
+       → rename it to: magnum-campaign.mp4
+       ══════════════════════════════════════════════ -->
+  <section id="ai-video" class="section">
+    <div class="container">
+      <h2 class="section-title">AI Marketing Video</h2>
+      <p class="section-sub">AI-generated campaign created for <strong>Magnum Ice Cream</strong>.</p>
+
+      <div class="video-card">
+        <div class="video-thumb">
+          <!--
+            ✏️  DEPLOY STEP:
+            1. Rename your video file to:  magnum-campaign.mp4
+            2. Put it in the same folder as index.html
+            3. The <video> below will play it automatically
+          -->
+          <video controls poster="">
+            <source src="magnum-campaign.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="video-info">
+          <div class="card-tag">AI Generated · Nostalgic Approach</div>
+          <h3 class="card-title">Magnum — A Taste of Childhood</h3>
+          <p class="card-desc">
+            A young South Asian man arrives on a scorching city street in the peak of summer heat.
+            He pauses — and watches children laughing, running, each one holding a Magnum ice cream bar.
+            Suddenly, a flood of memories rushes back: barefoot summers, sticky fingers, the pure joy
+            of that very first cold bite. Overwhelmed with nostalgia, eyes glistening, he walks
+            to the nearest shop and buys himself a Magnum.
+          </p>
+          <p class="card-strategy">
+            <strong>Strategy:</strong> Emotional marketing targeting Gen Z through nostalgia —
+            triggering childhood memories to build a deep, personal bond with the brand.
+            <em>Some pleasures never grow up.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       RESEARCH REPORTS — Magnum (Gen Z Focus only)
+       File: place Magnum_Report.docx in same folder.
+       Displayed as a download card since .docx can't
+       be embedded natively in browsers.
+       ══════════════════════════════════════════════ -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Research Reports</h2>
+      <p class="section-sub">Published research on <strong>Magnum Ice Cream</strong>.</p>
+
+      <div class="cards-grid single-col">
+
+        <!-- MAGNUM REPORT -->
+        <div class="card card-wide">
+          <div class="card-left">
+            <div class="card-tag">Gen Z Focus</div>
+            <h3 class="card-title">Gen Z & Magnum: Consumer Focus Report</h3>
+            <p class="card-desc">
+              A focused study on Gen Z's relationship with the Magnum brand — covering digital
+              touchpoints, identity-driven consumption, peer influence, and how Magnum can
+              authentically speak to the Gen Z mindset. Includes brand positioning analysis,
+              consumer behaviour insights, and campaign recommendations.
+            </p>
+            <div class="card-meta">📅 2026 &nbsp;·&nbsp; Magnum Research Series &nbsp;·&nbsp; Ayan Asif</div>
+            <a href="Magnum_Report.docx" download class="btn btn-primary" style="margin-top:8px">
+              ⬇ Download Report
+            </a>
+          </div>
+          <div class="card-preview report-preview">
+            <div class="preview-placeholder">
+              <div class="preview-icon">📄</div>
+              <p>Magnum Consumer Focus Report</p>
+              <span>Gen Z Marketing Research · 2026</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       ACADEMIC PROJECTS
+       Files needed in same folder:
+         national foods report.docx  → National Foods report
+         ppt.pptx                    → Stock Analysis (Profit Pulse)
+       ══════════════════════════════════════════════ -->
+  <section id="academic" class="section">
+    <div class="container">
+      <h2 class="section-title">Academic Projects</h2>
+      <p class="section-sub">University finance and business reports — FAST NUCES.</p>
+
+      <!-- ── PROJECT 1: National Foods ── -->
+      <div class="academic-block">
+        <div class="academic-info">
+          <div class="card-tag">Financial Accounting</div>
+          <h3 class="card-title">National Foods Limited — Financial Accounting Project</h3>
+          <p class="card-desc">
+            A comprehensive financial analysis of <strong>National Foods Limited (NFL)</strong>,
+            Pakistan's leading food company listed on PSX (ticker: NATF). Covers ratio analysis
+            (2020–2024), horizontal &amp; vertical analysis, liquidity, profitability,
+            solvency metrics, and strategic recommendations.
+          </p>
+          <ul class="report-highlights">
+            <li>📊 Current ratio improved from 1.06 (2022) → 1.25 (2024)</li>
+            <li>📉 Net profit margin declined to 3.2% in 2024 due to rising finance costs</li>
+            <li>📈 Sales grew 34.3% but debt-to-assets surged to 68.9%</li>
+            <li>🏫 FAST NUCES · Group Members: 24k5503, 23k5505, 24k5549, 24k5600</li>
+          </ul>
+          <a href="national foods report.docx" download class="btn btn-primary" style="margin-top:12px">
+            📄 Download Full Report
+          </a>
+        </div>
+
+        <!-- Visual preview card — click to open PDF, works locally & on Vercel -->
+        <a href="national foods report.docx" download class="doc-preview-card">
+          <div class="doc-preview-top nfl-gradient">
+            <div class="doc-mock-page">
+              <div class="doc-logo-placeholder">🏢</div>
+              <div class="doc-mock-title">NATIONAL FOODS</div>
+              <div class="doc-mock-sub">Financial Accounting Project</div>
+              <div class="doc-mock-lines">
+                <span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <div class="doc-preview-footer">
+            <span class="doc-type-badge">DOCX</span>
+            <span class="doc-preview-label">national foods report.docx</span>
+            <span class="doc-open-icon">&#8599;</span>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="divider"></div>
+
+
+      <!-- ── PROJECT 2: Stock Analysis ── -->
+      <div class="academic-block reverse">
+        <div class="academic-info">
+          <div class="card-tag">Business Finance · Stock Analysis</div>
+          <h3 class="card-title">Profit Pulse — Stock Analysis of Three PSX Companies</h3>
+          <p class="card-desc">
+            A comparative financial analysis of three companies listed on the
+            Pakistan Stock Exchange: <strong>Meezan Bank (MEBL)</strong>,
+            <strong>Engro Fertilizers (EFERT)</strong>, and
+            <strong>Sui Southern Gas Company (SSGC)</strong>.
+          </p>
+          <ul class="report-highlights">
+            <li>📊 Monthly stock returns over 2022–2023 from PSX data</li>
+            <li>📐 Standard deviation, coefficient of variation, and correlations</li>
+            <li>💼 Portfolio analysis: P1, P2, P3 with expected return &amp; beta risk</li>
+            <li>🏆 MEBL avg return: 1.87% · EFERT: 1.38% · SSGC: 0.54%</li>
+          </ul>
+          <a href="ppt.pptx" download class="btn btn-primary" style="margin-top:12px">
+            📄 Download Presentation
+          </a>
+        </div>
+
+        <!-- Visual preview card — click to open PDF, works locally & on Vercel -->
+        <a href="ppt.pptx" download class="doc-preview-card">
+          <div class="doc-preview-top ppt-gradient">
+            <div class="doc-mock-page">
+              <div class="doc-logo-placeholder">📈</div>
+              <div class="doc-mock-title">PROFIT PULSE</div>
+              <div class="doc-mock-sub">A Deep Dive into the Health of Three Companies</div>
+              <div class="doc-mock-companies">
+                <span>MEBL</span>
+                <span>EFERT</span>
+                <span>SSGC</span>
+              </div>
+            </div>
+          </div>
+          <div class="doc-preview-footer">
+            <span class="doc-type-badge ppt-badge">PPTX</span>
+            <span class="doc-preview-label">ppt.pptx</span>
+            <span class="doc-open-icon">&#8599;</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════
+       CONTACT
+       ══════════════════════════════════════════════ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-sub">Open to internships, collaborations, or just a chat.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:khanayyan114@gmail.com">khanayyan114@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <!-- ✏️ Replace with your actual LinkedIn URL -->
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">
+                linkedin.com/in/yourprofile
+              </a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📄</span>
+            <div>
+              <p class="contact-label">CV</p>
+              <a href="AyanAsif_CV_Final.docx" download>Download my CV</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="form-group">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" rows="5" placeholder="What's on your mind?"></textarea>
+          </div>
+          <button class="btn btn-primary" id="sendBtn">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <p>© 2026 Ayan Asif &nbsp;·&nbsp; khanayyan114@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
